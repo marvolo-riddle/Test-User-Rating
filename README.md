@@ -1,8 +1,37 @@
-# React + Vite
+# Система хранения отзывов и рейтингов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
 
-Currently, two official plugins are available:
+Данный проект представляет собой систему для хранения отзывов и рейтингов пользователей. Любой зарегистрированный пользователь может оставить отзыв с текстом и звёздами от 1 до 5 о любом другом пользователе. Средний рейтинг рассчитывается и отображается. Пользователи с ролью администратора могут удалять отзывы, что также пересчитывает рейтинг.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функциональные возможности
+
+1. Регистрация и аутентификация пользователей.
+2. Оставление отзывов с текстом и оценкой от 1 до 5.
+3. Вычисление и отображение среднего рейтинга.
+4. Возможность администратора удалять отзывы.
+
+## Используемые технологии
+
+- Redux Toolkit
+- Router
+- Firebase Authentication
+- Firebase Realtime Database
+- Formik
+- Yup
+- Material UI
+
+## Тестовые пользователи
+
+Для демонстрации работы системы были созданы тестовые пользователи. Ниже приведены данные для входа:
+
+### Администратор
+- **Email**: 'admin@example.com'
+- **Пароль**: 'AdminPassword123'
+
+### Тестовые пользователи
+- src/data/testUsers.js
+
+
+
+Проект был разработан с учетом требований, изложенных в ТЗ. Для более подробной информации о функциях и возможностях системы, пожалуйста, ознакомьтесь с кодом.
